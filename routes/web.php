@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +15,14 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-/* Route::get('/', 'PersonsController@index'); */
+Route::get('/', 'PersonsController@index'); 
 
+/*
 Route::get('/' , 'HomeController@index')->name('blog.index');
 Route::get('/single' , 'HomeController@show')->name('blog.single');
 Route::get('/about' , 'HomeController@about')->name('about');
-/*not frther worked in below route*/
 Route::get('/contact' ,'HomeController@contact')->name('contact');
+*/
 
 
 

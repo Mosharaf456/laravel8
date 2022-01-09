@@ -1,21 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Person;
 use Illuminate\Http\Request;
-use App\Country;
 
+use App\Models\Person;
 class PersonsController extends Controller
 {
     public function index()
     {
-        $person_list = Person::all(); //select * form people;
+        $person_list = Person::all();  //select * form people;
+        // dd($person_list->toArray());
+        return view('personlist',compact('person_list'));
 
-        return view('personlist', compact('person_list'));
     }
 }
-
 
 // model represent a table in database
 // model creation
@@ -29,4 +27,4 @@ class PersonsController extends Controller
 // override table name
 // code first
 // DB/databse first concept
-// 
+

@@ -18,7 +18,7 @@
 
         @foreach ($person_list as $person)
             <tr>
-                <td> {{ $person->id }} </td>
+                <td> {{ $person->person_id }} </td>
                 <td>{{ $person->name }}</td>
                 <td>{{ $person->email }}</td>
                 <td>{{ $person->address }}</td>
