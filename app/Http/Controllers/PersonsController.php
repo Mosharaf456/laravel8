@@ -8,7 +8,7 @@ class PersonsController extends Controller
 {
     public function index()
     {
-        $person_list = Person::all();  //select * form people;
+        $person_list = Person::all();  //select * form people; comes from model 
         // dd($person_list->toArray());
         return view('personlist',compact('person_list'));
 
